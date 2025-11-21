@@ -1,3 +1,27 @@
+export interface DatosMonetariasParameters {
+    idVariable: number;
+    desde: string;
+    hasta: string;
+    offset?: number;
+    limit?: number; 
+}
+
+export interface MetodologiaParameters {
+    idVariable: number;
+    offset?: number;
+    limit?: number;
+}
+
+export interface MonetariasParameters {
+    idVariable?: number;
+    categoria: string;
+    tipoSerie: string;
+    periodicidad: string;
+    unidadExpresion: string;
+    offset?: number;
+    limit?: number;
+}
+
 export interface DatosMonetaria {
     idVariable: number;
     detalle: DetalleMonetaria[] | null;
@@ -51,11 +75,6 @@ export interface MonetariasResponse {
     status: number;
     metadata: Metadata;
     results: Monetarias[] | null;
-}
-
-export interface ResponseError {
-    status: number;
-    errorMessages: string[] | null;
 }
 
 export interface Resultset {

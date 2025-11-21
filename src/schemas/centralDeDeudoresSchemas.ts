@@ -62,11 +62,6 @@ export interface DeudaResponse {
     results: Deuda;
 }
 
-export interface ErrorResponse {
-    status: number;
-    errorMessages: string[] | null;
-}
-
 export interface HistorialDeuda {
     identificacion: number;
     denominacion: string | null;

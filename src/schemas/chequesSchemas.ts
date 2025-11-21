@@ -17,11 +17,6 @@ export interface ChequeResponse {
     results: Cheque
 }
 
-export interface ChequeResponseError {
-    status: number;
-    errorMessages: string[] | null;
-}
-
 export interface Entidad {
     codigoEntidad: number;
     denominacion: string | null;
@@ -30,9 +25,4 @@ export interface Entidad {
 export interface EntidadResponse {
     status: number;
     results: Entidad[] | null;
-}
-
-export interface EntidadResponseError {
-    status: number;
-    errorMessages: string[] | null;
 }

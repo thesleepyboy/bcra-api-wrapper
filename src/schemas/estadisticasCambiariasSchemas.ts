@@ -1,3 +1,15 @@
+export interface CotizacionesFechaParameters {
+    fecha: string;
+}
+
+export interface EvolucionMonedaParameters {
+    moneda: string;
+    fechadesde: string;
+    fechahasta: string;
+    limit?: number;
+    offset?: number;
+}
+
 export interface CotizacionesDetalle {
     codigoMoneda: string | null;
     descripcion: string | null;
@@ -29,11 +41,6 @@ export interface Divisa {
 export interface DivisaResponse {
     status: number;
     results: Divisa[] | null;
-}
-
-export interface ErrorResponse {
-    status: number;
-    errorMessages: string[] | null;
 }
 
 export interface Metadata {
